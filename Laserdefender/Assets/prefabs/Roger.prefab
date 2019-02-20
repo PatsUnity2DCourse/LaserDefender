@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4136834998567614}
   - component: {fileID: 212084033924655410}
   - component: {fileID: 114161913913112416}
+  - component: {fileID: 114248382827974892}
+  - component: {fileID: 58047597950088460}
   m_Layer: 0
   m_Name: Roger
   m_TagString: Untagged
@@ -35,12 +37,27 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1522976174446690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9734447, y: 2.7516985, z: 0}
+  m_LocalPosition: {x: 0.3964712, y: -3.0672646, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58047597950088460
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522976174446690}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007296294, y: -0.038872957}
+  serializedVersion: 2
+  m_Radius: 0.34249735
 --- !u!114 &114161913913112416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,6 +69,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8d99025c492eb4098c50c8b4c5ae6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114248382827974892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522976174446690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfd7cb57c00eac44aa6540fe3d65e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  projectileSpeed: 10
+  laserPrefab: {fileID: 1327006552765476, guid: f61dd6a3899c6ca49aadf822e4497b01,
+    type: 2}
 --- !u!212 &212084033924655410
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4763901549093172}
   - component: {fileID: 212158330467468014}
   - component: {fileID: 114099749280045748}
+  - component: {fileID: 58964258856010818}
+  - component: {fileID: 114206508485400872}
   m_Layer: 0
   m_Name: Bernard
   m_TagString: Untagged
@@ -41,6 +43,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58964258856010818
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332401570024316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.515
 --- !u!114 &114099749280045748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,6 +69,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8d99025c492eb4098c50c8b4c5ae6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114206508485400872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332401570024316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfd7cb57c00eac44aa6540fe3d65e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  projectileSpeed: 10
+  laserPrefab: {fileID: 1327006552765476, guid: f61dd6a3899c6ca49aadf822e4497b01,
+    type: 2}
 --- !u!212 &212158330467468014
 SpriteRenderer:
   m_ObjectHideFlags: 1
